@@ -1,0 +1,161 @@
+body {
+    background-color: #e4e4e4;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.blue-bar {
+    background-color: #000080;
+    height: 10px;
+}
+
+header {
+    background-color: #000080;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul li a, a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav ul li a:hover, a:hover {
+    color: #00f;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #000080;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.logo span {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.contact-info,
+.legal-info {
+    margin: 20px;
+}
+
+.contact-info p,
+.legal-info p {
+    margin: 20px 0;
+}
+
+h1,
+h2 {
+    animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour les images */
+img {
+    animation: zoom-in 1s ease-in forwards;
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+main {
+    align-items: stretch;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+section h1 {
+    background-color: #000080;
+}
+
+img {
+    width: 800px;
+}
+
+#geometrie, #soudure {
+    padding-bottom: 500px;
+}
+
+#pneumatiques {
+    padding-bottom: 20px;
+}
+
+#pneumatiques div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#pneumatiques div img {
+    width: 700px;
+}
